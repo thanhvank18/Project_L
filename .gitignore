@@ -1,0 +1,22 @@
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Local environment files; retain safe examples
+.env
+.env.*
+!.env.example
+
+# Local tooling and caches
+.impeccable/config.local.json
+.impeccable/live/
+.impeccable/review/
+.serena/
+*.log
+.DS_Store
+Thumbs.db

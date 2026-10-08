@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T03:32:38.865Z",
+  "title": "Design System: Project_L Demo",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "displayName": "Vivid Blue",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(0.15 0.21 266)",
+          "oklch(0.26 0.21 266)",
+          "oklch(0.38 0.21 266)",
+          "oklch(0.49 0.21 266)",
+          "oklch(0.61 0.21 266)",
+          "oklch(0.72 0.21 266)",
+          "oklch(0.84 0.21 266)",
+          "oklch(0.95 0.21 266)"
+        ]
+      },
+      "primary-hover": {
+        "displayName": "Deep Blue",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(0.15 0.19 266)",
+          "oklch(0.26 0.19 266)",
+          "oklch(0.38 0.19 266)",
+          "oklch(0.49 0.19 266)",
+          "oklch(0.61 0.19 266)",
+          "oklch(0.72 0.19 266)",
+          "oklch(0.84 0.19 266)",
+          "oklch(0.95 0.19 266)"
+        ]
+      },
+      "paper": {
+        "displayName": "Light Paper",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0.003 100)",
+          "oklch(0.26 0.003 100)",
+          "oklch(0.38 0.003 100)",
+          "oklch(0.49 0.003 100)",
+          "oklch(0.61 0.003 100)",
+          "oklch(0.72 0.003 100)",
+          "oklch(0.84 0.003 100)",
+          "oklch(0.95 0.003 100)"
+        ]
+      },
+      "ink": {
+        "displayName": "Dark Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0.007 248)",
+          "oklch(0.26 0.007 248)",
+          "oklch(0.38 0.007 248)",
+          "oklch(0.49 0.007 248)",
+          "oklch(0.61 0.007 248)",
+          "oklch(0.72 0.007 248)",
+          "oklch(0.84 0.007 248)",
+          "oklch(0.95 0.007 248)"
+        ]
+      },
+      "muted": {
+        "displayName": "Muted Slate",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0.014 251)",
+          "oklch(0.26 0.014 251)",
+          "oklch(0.38 0.014 251)",
+          "oklch(0.49 0.014 251)",
+          "oklch(0.61 0.014 251)",
+          "oklch(0.72 0.014 251)",
+          "oklch(0.84 0.014 251)",
+          "oklch(0.95 0.014 251)"
+        ]
+      },
+      "line": {
+        "displayName": "Soft Divider",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0.004 248)",
+          "oklch(0.26 0.004 248)",
+          "oklch(0.38 0.004 248)",
+          "oklch(0.49 0.004 248)",
+          "oklch(0.61 0.004 248)",
+          "oklch(0.72 0.004 248)",
+          "oklch(0.84 0.004 248)",
+          "oklch(0.95 0.004 248)"
+        ]
+      },
+      "white": {
+        "displayName": "White",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.26 0 0)",
+          "oklch(0.38 0 0)",
+          "oklch(0.49 0 0)",
+          "oklch(0.61 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "preview-stage": {
+        "displayName": "Cool Stage",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(0.15 0.008 258)",
+          "oklch(0.26 0.008 258)",
+          "oklch(0.38 0.008 258)",
+          "oklch(0.49 0.008 258)",
+          "oklch(0.61 0.008 258)",
+          "oklch(0.72 0.008 258)",
+          "oklch(0.84 0.008 258)",
+          "oklch(0.95 0.008 258)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Vietnamese hero headline."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Supporting hero copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation and action controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "preview-browser",
+        "value": "0 24px 54px #3443661f",
+        "purpose": "Ambient lift within the concept stage."
+      },
+      {
+        "name": "mobile-menu",
+        "value": "0 12px 28px #20232615",
+        "purpose": "Mobile navigation overlay separation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-transition",
+        "value": "background 0.2s, transform 0.2s",
+        "purpose": "Button hover feedback; disabled for reduced motion."
+      },
+      {
+        "name": "preview-color-transition",
+        "value": "background 0.3s",
+        "purpose": "Local illustration color changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "intermediate-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Demo anchor CTA on light surfaces.",
+      "html": "<a class=\"ds-primary\" href=\"#contact\">Bắt đầu câu chuyện <svg width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M64 192 192 64M64 64h128v128\"/></svg></a>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:54px;padding:14px 22px;border:1px solid transparent;border-radius:7px;background:var(--accent,#2249e8);color:#fff;font:500 13px \"Be Vietnam Pro\",sans-serif;text-decoration:none;transition:background .2s,transform .2s}.ds-primary:hover{background:#1938b8;transform:translateY(-2px)}.ds-primary:focus-visible{outline:3px solid var(--accent,#2249e8);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}.ds-primary:hover{transform:none}}"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Inverted submit control on the demo contact surface.",
+      "html": "<div class=\"ds-contact\"><button class=\"ds-light\" type=\"button\">Thử gửi ý tưởng <svg width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M64 192 192 64M64 64h128v128\"/></svg></button></div>",
+      "css": ".ds-contact{padding:24px;background:var(--accent,#2249e8)}.ds-light{display:inline-flex;align-items:center;gap:22px;min-height:54px;padding:14px 22px;border:1px solid transparent;border-radius:7px;background:#fff;color:var(--accent,#2249e8);font:500 13px \"Be Vietnam Pro\",sans-serif;cursor:pointer;transition:background .2s,transform .2s}.ds-light:hover{background:#e9edff;transform:translateY(-2px)}.ds-light:focus-visible{outline:3px solid #fff;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-light{transition:none}.ds-light:hover{transform:none}}"
+    },
+    {
+      "name": "Contact Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Labeled translucent field on the blue contact surface.",
+      "html": "<div class=\"ds-field-wrap\"><label for=\"ds-name\">Tên của bạn</label><input id=\"ds-name\" class=\"ds-field\" placeholder=\"Bạn muốn chúng tôi gọi thế nào?\" maxlength=\"100\" required></div>",
+      "css": ".ds-field-wrap{padding:24px;background:var(--accent,#2249e8);color:#fff;font:400 12px \"Be Vietnam Pro\",sans-serif}.ds-field-wrap label{display:block;margin-bottom:10px}.ds-field{width:calc(100% - 30px);border:1px solid #ffffff80;border-radius:6px;background:#ffffff0c;color:#fff;padding:14px;font:inherit;caret-color:#fff}.ds-field::placeholder{color:#dce5ff;opacity:1}.ds-field:focus-visible{outline:3px solid #fff;outline-offset:5px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Desktop section anchors and contact action.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Điều hướng chính\"><a href=\"#approach\">Cách làm</a><a href=\"#preview\">Khám phá</a><a class=\"ds-nav-contact\" href=\"#contact\">Cùng bắt đầu <svg width=\"20\" height=\"20\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"16\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M64 192 192 64M64 64h128v128\"/></svg></a></nav>",
+      "css": ".ds-nav{display:flex;gap:36px;align-items:center;flex-wrap:wrap;font:500 13px \"Be Vietnam Pro\",sans-serif;color:var(--ink,#202326)}.ds-nav a{color:inherit;text-decoration:none}.ds-nav a:hover{color:var(--accent,#2249e8)}.ds-nav a:focus-visible{outline:3px solid var(--accent,#2249e8);outline-offset:5px}.ds-nav-contact{display:flex;align-items:center;gap:12px;padding-left:30px;border-left:1px solid var(--line,#dfe1e3)}"
+    },
+    {
+      "name": "Preview Theme Control",
+      "kind": "custom",
+      "description": "Selected local preview color; selection is illustrative in this static snippet.",
+      "html": "<button class=\"ds-theme\" type=\"button\" aria-label=\"Màu Xanh\" aria-pressed=\"true\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 256 256\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m40 136 56 56L216 72\"/></svg></button>",
+      "css": ".ds-theme{display:grid;place-items:center;width:44px;height:44px;border:6px solid #e9ecf1;border-radius:50%;background:#2249e8;color:#fff;cursor:pointer}.ds-theme[aria-pressed=true]{outline:1px solid var(--ink,#202326);outline-offset:0}.ds-theme:focus-visible{outline:3px solid var(--accent,#2249e8);outline-offset:5px}"
+    },
+    {
+      "name": "Preview Browser",
+      "kind": "card",
+      "description": "Contained illustrative browser with ambient depth.",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-browser\"><div class=\"ds-toolbar\">● ● ● &nbsp; your-next-idea.studio</div><div class=\"ds-mini\"><strong>form &amp; feeling</strong><h3>Less noise.<br>More you.</h3><p>A little clarity. A lot of character.</p></div></div></div>",
+      "css": ".ds-stage{padding:36px;background:#e9ecf1;border-radius:12px}.ds-browser{border:1px solid #fff;background:#fff;border-radius:9px;overflow:hidden;box-shadow:0 24px 54px #3443661f;transform:rotate(-2deg);font-family:\"Be Vietnam Pro\",sans-serif}.ds-toolbar{padding:12px 16px;font-size:9px;color:#62686f}.ds-mini{padding:28px;background:#e8edff;color:#2249e8}.ds-mini strong{font-size:10px}.ds-mini h3{font-size:45px;line-height:1.17;font-weight:600;letter-spacing:-.04em;margin:24px 0 14px}.ds-mini p{font-size:9px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Provisional studio sample",
+    "overview": "This is a descriptive record of the current fictional digital-studio demo, extracted from the implementation. It is provisional and does not establish an approved identity for the future website. The descriptive North Star is a documentation label, not a user-selected creative commitment.\n\nThe observed sample pairs spacious light surfaces with strong Vietnamese typography and a vivid blue accent. Its interactive miniature website adds a contained illustration and color experiment. The page was implemented as a code-led sample; no comp or standing comp-first/code-first preference has been approved. Product purpose, audience, brand, routes, backend, hosting, and browser support remain open in PRODUCT.md.",
+    "keyCharacteristics": [
+      "Large Vietnamese headline and restrained supporting copy.",
+      "Light paper, dark ink, muted text, and a single page accent.",
+      "Desktop split details with a wide interactive preview; one-column mobile sections.",
+      "Phosphor icons and a clearly labeled local-only form."
+    ],
+    "rules": [
+      {
+        "name": "The Preview Scope Rule",
+        "body": "Blue, orange, and green theme choices affect only the miniature preview. They are not alternative site-wide brand palettes.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do treat these tokens as the current demo's provisional implementation record.",
+      "Do preserve Vietnamese font support, visible focus, responsive stacking, and reduced-motion behavior.",
+      "Do retain the concept caption and local-only form disclosure while these demo features remain."
+    ],
+    "donts": [
+      "Don't interpret preview theme options as alternative site-wide accents.",
+      "Don't promote the fictional studio content into approved product claims or client evidence.",
+      "Don't treat this code-led sample as a saved workflow preference or approved permanent brand."
+    ]
+  }
+}
