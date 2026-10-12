@@ -1,0 +1,28 @@
+.mis-portal .consultation-outcomes {
+  display: grid;
+  gap: 0.75rem;
+  border-top: 1px solid var(--mis-line);
+  padding-top: 1rem;
+}
+.mis-portal .consultation-outcome-row {
+  display: grid;
+  justify-items: start;
+  gap: 0.6rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.mis-portal .consultation-outcome-row + .consultation-outcome-row {
+  padding-top: 1rem;
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .consultation-outcome-editor .live-fieldset {
+  display: grid;
+  gap: 1rem;
+}
+.mis-portal .consultation-outcome-editor details > p {
+  margin-top: 0.75rem;
+}
+.mis-portal .consultation-outcome-editor summary:focus-visible {
+  outline: 3px solid var(--mis-primary);
+  outline-offset: 3px;
+}

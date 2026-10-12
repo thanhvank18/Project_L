@@ -1,0 +1,161 @@
+.mis-portal .live-personal h1 {
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.mis-portal .live-personal h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-personal input,
+.mis-portal .live-personal textarea {
+  caret-color: var(--mis-primary);
+}
+.mis-portal .live-agenda,
+.mis-portal .live-word-list {
+  padding-block: 0;
+}
+.mis-portal .live-agenda-item {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+}
+.mis-portal .live-agenda-item + .live-agenda-item,
+.mis-portal .live-word-row + .live-word-row {
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .live-agenda-date {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.7;
+}
+.mis-portal .live-agenda-date time {
+  font-weight: 500;
+}
+.mis-portal .live-agenda-date span {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+}
+.mis-portal .live-agenda-content {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+}
+.mis-portal .live-agenda-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+.mis-portal .live-agenda-title .mis-status {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-preparation {
+  border-top: 1px solid var(--mis-line);
+  padding-top: 0.75rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-booking-list {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.mis-portal .live-booking-list li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+.mis-portal .live-booking-list li > :last-child {
+  color: var(--mis-muted);
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .live-notebook-search {
+  max-width: 38rem;
+}
+.mis-portal .live-word-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-block: 1.5rem;
+}
+.mis-portal .live-word-row > div:first-child {
+  min-width: 0;
+}
+.mis-portal .live-word-row > .live-actions {
+  flex-shrink: 0;
+}
+.mis-portal .live-word-row .live-prose {
+  margin-top: 0.65rem;
+}
+.mis-portal .live-word-example {
+  margin-top: 0.5rem;
+  color: var(--mis-muted);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-width: 75ch;
+}
+.mis-portal .live-delete-confirm {
+  display: grid;
+  gap: 1rem;
+}
+.mis-portal .live-account-details,
+.mis-portal .live-integration-list {
+  margin-block: 1rem;
+}
+.mis-portal .live-account-details > div,
+.mis-portal .live-integration-list > div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 1fr) minmax(0, 3fr);
+  gap: 1rem;
+  padding-block: 0.8rem;
+  border-bottom: 1px solid var(--mis-line);
+  line-height: 1.8;
+}
+.mis-portal .live-account-details dt,
+.mis-portal .live-integration-list dt {
+  color: var(--mis-muted);
+}
+.mis-portal .live-account-details dd,
+.mis-portal .live-integration-list dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  max-width: 75ch;
+}
+.mis-portal .live-password-form .live-fieldset {
+  max-width: 46rem;
+}
+.mis-portal .live-password-form > .live-error,
+.mis-portal .live-password-form > .live-success {
+  margin-top: 1rem;
+}
+.mis-portal .live-password-form > .live-success {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+@media (max-width: 760px) {
+  .mis-portal .live-agenda-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+  }
+  .mis-portal .live-word-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .mis-portal .live-account-details > div,
+  .mis-portal .live-integration-list > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.2rem;
+  }
+}

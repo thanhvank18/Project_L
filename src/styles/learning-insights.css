@@ -1,0 +1,126 @@
+.mis-portal .learning-overview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mis-portal .learning-help {
+  max-width: 75ch;
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  line-height: 1.75;
+}
+.mis-portal .learning-class-filter {
+  width: min(100%, 20rem);
+}
+.mis-portal .learning-counts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  border-block: 1px solid var(--mis-line);
+}
+.mis-portal .learning-counts > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+.mis-portal .learning-counts dt {
+  font-size: 0.8125rem;
+}
+.mis-portal .learning-counts a {
+  color: var(--mis-primary);
+}
+.mis-portal .learning-counts dd {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .learning-task-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.mis-portal .learning-task-heading > :first-child {
+  flex: 1 1 12rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .learning-task-heading .mis-status {
+  font-size: 0.75rem;
+}
+.mis-portal .learning-task-heading .learning-urgency-overdue {
+  color: #991b1b;
+  background: #fef2f2;
+}
+.mis-portal .learning-task-heading .learning-urgency-soon {
+  color: #92400e;
+  background: #fffbeb;
+}
+.mis-portal .learning-enrollment-notice {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.mis-portal .learning-table-scroll {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.mis-portal .learning-table-scroll:focus-visible {
+  outline: 3px solid var(--mis-primary);
+  outline-offset: 3px;
+}
+.mis-portal .learning-table {
+  min-width: 32rem;
+}
+.mis-portal .learning-table tbody th {
+  background: transparent;
+  color: var(--mis-ink);
+  white-space: normal;
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .learning-table :is(th, td):first-child {
+  padding-left: 0.5rem;
+}
+.mis-portal .learning-followups details {
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .learning-followups summary {
+  padding-block: 1rem;
+  color: var(--mis-primary);
+  font-weight: 500;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.mis-portal .learning-followups summary:focus-visible {
+  outline: 3px solid var(--mis-primary);
+  outline-offset: 3px;
+}
+.mis-portal .learning-followups .live-rows {
+  padding: 0 0.5rem 0.5rem;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1050px) {
+  .mis-portal .learning-counts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mis-portal .learning-counts > div:nth-child(n + 3) {
+    border-top: 1px solid var(--mis-line);
+  }
+}
+@media (max-width: 600px) {
+  .mis-portal .learning-counts > div {
+    padding: 0.75rem 0.5rem;
+  }
+  .mis-portal .learning-task-heading > :first-child {
+    flex-basis: 100%;
+  }
+  .mis-portal .learning-class-filter {
+    width: 100%;
+  }
+}

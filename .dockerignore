@@ -1,0 +1,14 @@
+# Allow only backend source, locked dependencies and original teaching audio.
+# In particular, never send .local, .git, env files or release archives to Docker.
+**
+!Dockerfile
+!package.json
+!pnpm-lock.yaml
+!server/
+!server/**
+server/**/*.test.ts
+!shared/
+!shared/**
+!content/
+!content/starter/
+!content/starter/*.wav

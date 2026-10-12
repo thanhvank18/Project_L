@@ -1,0 +1,271 @@
+.mis-portal .study-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 20px;
+  align-items: start;
+}
+.mis-portal .study-layout > * {
+  min-width: 0;
+}
+.mis-portal .study-layout .mis-panel {
+  padding: 20px;
+}
+.mis-portal .study-prompt {
+  grid-auto-rows: max-content;
+  align-content: start;
+}
+.mis-portal .study-notebook-host {
+  grid-column: 1 / -1;
+}
+.mis-portal .writing-layout .study-response {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+.mis-portal .study-notebook h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.mis-portal .study-layout h2 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.mis-portal .study-passage {
+  font-size: 14px;
+  min-height: 80px;
+}
+.mis-portal .study-passage mark {
+  background: var(--edu-selection);
+  color: var(--mis-ink);
+}
+.mis-portal .study-passage:focus-visible,
+.mis-portal .study-map-scroll:focus-visible {
+  outline: 2px solid var(--edu-focus);
+  outline-offset: 4px;
+}
+.mis-portal .study-passage::selection {
+  background: var(--edu-selection);
+}
+.mis-portal :is(.study-annotation, .study-definitions li, .study-history) {
+  border-top: 1px solid var(--mis-line);
+  padding-top: 14px;
+}
+.mis-portal .study-annotation {
+  display: grid;
+  gap: 10px;
+}
+.mis-portal :is(.study-annotation blockquote, .study-selection, .study-history blockquote) {
+  margin: 0;
+  padding: 10px 12px;
+  background: var(--edu-soft);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  font-size: 13px;
+}
+.mis-portal .study-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  color: var(--mis-primary);
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border: 0;
+  padding: 5px 0;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+.mis-portal .study-text-button:hover {
+  color: var(--edu-primary-hover);
+}
+.mis-portal .study-text-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.mis-portal .study-text-button:focus-visible {
+  outline: 2px solid var(--edu-focus);
+  outline-offset: 3px;
+}
+.mis-portal .study-definitions ol {
+  padding-left: 20px;
+  margin: 12px 0;
+}
+.mis-portal .study-definitions li {
+  padding-bottom: 12px;
+}
+.mis-portal .study-definitions p {
+  margin: 5px 0;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.mis-portal .study-saved-words {
+  padding-left: 20px;
+  font-size: 13px;
+}
+.mis-portal .study-saved-words li {
+  margin-block: 8px;
+  overflow-wrap: anywhere;
+}
+.mis-portal .study-mode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mis-portal .study-mode [aria-pressed='true'] {
+  background: var(--edu-selection);
+  border-color: var(--mis-primary);
+  color: var(--mis-primary);
+}
+.mis-portal .study-map .live-heading {
+  align-items: start;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.mis-portal .study-map .live-heading > div:first-child {
+  flex: 1;
+  min-width: 230px;
+}
+.mis-portal .study-map-scroll {
+  overflow: auto;
+  max-height: 500px;
+  border: 1px solid var(--mis-line);
+  border-radius: 6px;
+  background: var(--edu-bg);
+}
+.mis-portal .study-map-canvas {
+  position: relative;
+}
+.mis-portal .study-map-lines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.mis-portal .study-map-lines path {
+  fill: none;
+  stroke: var(--mis-muted);
+  stroke-width: 1.5;
+}
+.mis-portal .study-map-node {
+  position: absolute;
+  width: 166px;
+  min-height: 50px;
+  max-height: 64px;
+  overflow: auto;
+  padding: 9px 12px;
+  border: 1px solid var(--mis-line);
+  border-radius: 6px;
+  background: var(--mis-surface);
+  color: var(--mis-ink);
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+.mis-portal .study-map-node[aria-pressed='true'] {
+  background: var(--edu-selection);
+  border-color: var(--mis-primary);
+}
+.mis-portal .study-map-node:hover {
+  border-color: var(--mis-primary);
+}
+.mis-portal .study-map-node:focus-visible {
+  outline: 2px solid var(--edu-focus);
+  outline-offset: 3px;
+}
+.mis-portal .study-map-empty {
+  padding: 32px 20px;
+  color: var(--mis-muted);
+  max-width: 60ch;
+}
+.mis-portal .study-map-edit {
+  display: grid;
+  gap: 14px;
+}
+.mis-portal .study-drawing {
+  width: 100%;
+  aspect-ratio: 1000 / 540;
+  min-height: 240px;
+  border: 1px solid var(--mis-line);
+  border-radius: 6px;
+  background: var(--mis-surface);
+  touch-action: none;
+  cursor: crosshair;
+}
+.mis-portal .study-drawing polyline {
+  fill: none;
+  stroke: var(--mis-primary);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.mis-portal .study-savebar {
+  border-top: 1px solid var(--mis-line);
+  padding-top: 18px;
+}
+.mis-portal .study-alert {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+  background: var(--edu-soft);
+}
+.mis-portal .study-alert p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.mis-portal .study-history {
+  margin-top: 16px;
+}
+.mis-portal .study-history > .mis-panel {
+  border: 0;
+  padding-inline: 0;
+}
+@media (min-width: 1280px) {
+  .mis-portal .study-layout {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.3fr) minmax(215px, 0.8fr);
+    gap: 16px;
+  }
+  .mis-portal .study-notebook-host {
+    grid-column: auto;
+  }
+  .mis-portal .writing-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(220px, 0.85fr);
+    align-items: stretch;
+  }
+  .mis-portal .writing-layout > :is(.study-prompt, .study-response, .study-notebook-host) {
+    max-height: 78vh;
+    min-height: 540px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+  }
+  .mis-portal .writing-layout .study-notebook {
+    min-height: 100%;
+  }
+  .mis-portal .writing-layout .study-map .live-heading {
+    display: grid;
+  }
+}
+@media (max-width: 760px) {
+  .mis-portal .study-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mis-portal .study-layout .mis-panel {
+    padding: 18px;
+  }
+  .mis-portal .study-map .live-heading > div:first-child {
+    min-width: 0;
+  }
+  .mis-portal .study-map .live-heading {
+    display: grid;
+  }
+  .mis-portal .study-mode .mis-button {
+    flex: 1;
+  }
+}

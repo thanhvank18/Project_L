@@ -1,0 +1,13 @@
+:root {
+  --edu-primary: #775a19;
+  --edu-primary-hover: #62480f;
+  --edu-gold: #c5a059;
+  --edu-ink: #29251f;
+  --edu-muted: #74695b;
+  --edu-line: #e7e0d5;
+  --edu-bg: #f8f6f1;
+  --edu-surface: #fff;
+  --edu-soft: #f1eee8;
+  --edu-selection: #e9ddc5;
+  --edu-focus: #775a19;
+}

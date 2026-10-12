@@ -1,0 +1,243 @@
+.mis-portal .live-admin {
+  display: grid;
+  gap: 1.25rem;
+  min-width: 0;
+}
+.mis-portal .live-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.mis-portal .live-heading > div {
+  min-width: 0;
+}
+.mis-portal .live-heading p {
+  margin-top: 0.4rem;
+  color: var(--mis-muted);
+  max-width: 70ch;
+}
+.mis-portal .live-heading > .mis-button {
+  flex-shrink: 0;
+}
+.mis-portal .live-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.mis-portal .live-toolbar > .live-help {
+  padding-bottom: 0.75rem;
+}
+.mis-portal .live-search {
+  position: relative;
+  flex: 1 1 16rem;
+}
+.mis-portal .live-search > svg {
+  position: absolute;
+  left: 0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--mis-muted);
+  pointer-events: none;
+}
+.mis-portal .live-search input.mis-field {
+  padding-left: 2.5rem;
+}
+.mis-portal .live-filter {
+  min-width: 10rem;
+  max-width: 100%;
+}
+.mis-portal .live-filter select {
+  max-width: 24rem;
+  text-overflow: ellipsis;
+}
+.mis-portal .live-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.mis-portal .live-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.mis-portal .live-wide {
+  grid-column: 1 / -1;
+}
+.mis-portal .live-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.mis-portal .live-fieldset > .live-actions {
+  margin-top: 1.25rem;
+}
+.mis-portal .live-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  cursor: pointer;
+  line-height: 1.6;
+}
+.mis-portal .live-check input {
+  flex-shrink: 0;
+  margin-top: 0.22rem;
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--mis-primary);
+}
+.mis-portal .live-check span {
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-check small {
+  display: block;
+  color: var(--mis-muted);
+  font-size: 0.75rem;
+}
+.mis-portal .live-check-group {
+  display: grid;
+  gap: 0.8rem;
+}
+.mis-portal .live-membership {
+  padding: 1rem;
+  margin: 0;
+  border: 1px solid var(--mis-line);
+  border-radius: 5px;
+  min-width: 0;
+}
+.mis-portal .live-membership legend {
+  padding: 0 0.3rem;
+  font-weight: 500;
+  font-size: 0.8125rem;
+}
+.mis-portal .live-member-list {
+  display: grid;
+  gap: 0.8rem;
+  max-height: 18rem;
+  overflow-y: auto;
+  padding: 0.3rem;
+}
+.mis-portal .live-membership > .live-check {
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .live-help {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+.mis-portal .live-cell-note {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-error {
+  color: var(--mis-error, #991b1b);
+  line-height: 1.6;
+}
+.mis-portal .live-editor > .live-error {
+  margin-top: 1rem;
+}
+.mis-portal .live-success {
+  color: var(--mis-success, #166534);
+}
+.mis-portal .live-status-success {
+  color: var(--mis-success, #166534);
+  background: var(--mis-success-bg, #f0fdf4);
+}
+.mis-portal .live-status-unread {
+  color: var(--mis-notice-ink, #1e40af);
+  background: var(--mis-soft, #eff6ff);
+}
+.mis-portal .live-row-error {
+  max-width: 36ch;
+  margin-top: 0.65rem;
+  font-size: 0.8125rem;
+}
+.mis-portal .live-empty {
+  padding: 2rem;
+  line-height: 1.8;
+  color: var(--mis-muted);
+}
+.mis-portal .live-empty p + p {
+  margin-top: 0.5rem;
+}
+.mis-portal .live-admin .mis-table-wrap {
+  padding: 0;
+}
+.mis-portal .live-admin .mis-table {
+  min-width: 36rem;
+}
+.mis-portal .live-admin .mis-table td {
+  max-width: 30rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-admin .mis-table td > select {
+  min-width: 10rem;
+}
+.mis-portal .live-admin .mis-table strong {
+  font-weight: 600;
+}
+.mis-portal .live-prose {
+  max-width: 75ch;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+}
+.mis-portal .live-details {
+  max-width: 36rem;
+}
+.mis-portal .live-details summary {
+  cursor: pointer;
+  color: var(--mis-primary);
+  padding: 0.5rem 0;
+}
+.mis-portal .live-details summary:focus-visible {
+  outline: 3px solid var(--mis-primary);
+  outline-offset: 3px;
+}
+.mis-portal .live-content-list {
+  padding-block: 0;
+}
+.mis-portal .live-content-item {
+  padding: 1.5rem 0;
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+.mis-portal .live-content-item + .live-content-item {
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .live-content-item > .live-heading {
+  width: 100%;
+}
+.mis-portal .live-content-item .mis-status {
+  flex-shrink: 0;
+}
+@media (max-width: 700px) {
+  .mis-portal .live-form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mis-portal .live-heading {
+    flex-wrap: wrap;
+  }
+  .mis-portal .live-toolbar > * {
+    flex: 1 1 100%;
+  }
+  .mis-portal .live-filter select {
+    max-width: none;
+  }
+  .mis-portal .live-empty {
+    padding: 1.25rem;
+  }
+  .mis-portal .live-member-list {
+    max-height: 14rem;
+  }
+}

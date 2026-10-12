@@ -1,0 +1,164 @@
+.mis-portal .live-drive {
+  min-width: 0;
+}
+.mis-portal .live-drive h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+.mis-portal .live-drive-details {
+  margin: 0;
+}
+.mis-portal .live-drive-details > div {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) minmax(0, 3fr);
+  gap: 1rem;
+  border-bottom: 1px solid var(--mis-line);
+  padding-block: 0.85rem;
+}
+.mis-portal .live-drive-details dt {
+  color: var(--mis-muted);
+}
+.mis-portal .live-drive-details dd {
+  display: grid;
+  justify-items: start;
+  gap: 0.2rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-drive-folder-name,
+.mis-portal .live-drive-external,
+.mis-portal .live-drive .live-success {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mis-portal .live-drive-external {
+  color: var(--mis-primary);
+  font-size: 0.8125rem;
+  text-underline-offset: 0.2em;
+}
+.mis-portal .live-drive svg {
+  flex-shrink: 0;
+}
+.mis-portal .live-drive-browser,
+.mis-portal .live-drive-disconnect {
+  display: grid;
+  gap: 1rem;
+  border-top: 1px solid var(--mis-line);
+  padding-top: 1.25rem;
+  min-width: 0;
+}
+.mis-portal .live-drive-path,
+.mis-portal .live-drive-path > span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+.mis-portal .live-drive-path button {
+  padding: 0.35rem 0.2rem;
+  color: var(--mis-primary);
+  border: 0;
+  background: transparent;
+  text-align: left;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+.mis-portal .live-drive-path button:hover:not(:disabled) {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.mis-portal .live-drive-path button:disabled {
+  color: var(--mis-muted);
+  cursor: default;
+}
+.mis-portal .live-drive-folders {
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--mis-line);
+  border-radius: 5px;
+  min-width: 0;
+  max-height: 24rem;
+  overflow-y: auto;
+  scrollbar-color: var(--mis-muted) var(--mis-soft);
+}
+.mis-portal .live-drive-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding-left: 0.9rem;
+}
+.mis-portal .live-drive-row + .live-drive-row {
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .live-drive-row:has(input:checked) {
+  background: var(--mis-soft);
+}
+.mis-portal .live-drive-row input {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  accent-color: var(--mis-primary);
+  cursor: pointer;
+}
+.mis-portal .live-drive-row button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+  min-height: 3rem;
+  padding: 0.65rem 0.9rem;
+  background: transparent;
+  border: 0;
+  color: var(--mis-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.mis-portal .live-drive-row button > span {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-drive-row button:hover:not(:disabled) {
+  background: var(--mis-soft);
+}
+.mis-portal .live-drive-row button:disabled,
+.mis-portal .live-drive-row input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.mis-portal .live-drive button:focus-visible,
+.mis-portal .live-drive a:focus-visible,
+.mis-portal .live-drive input:focus-visible {
+  outline: 2px solid var(--mis-primary);
+  outline-offset: 2px;
+}
+.mis-portal .live-drive-row button:focus-visible {
+  outline-offset: -3px;
+}
+.mis-portal .live-drive-selection,
+.mis-portal .live-drive-disconnect p {
+  max-width: 72ch;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-drive-error {
+  display: grid;
+  justify-items: start;
+  gap: 0.5rem;
+}
+@media (max-width: 760px) {
+  .mis-portal .live-drive .live-heading {
+    flex-wrap: wrap;
+  }
+  .mis-portal .live-drive-details > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+  .mis-portal .live-drive .mis-button {
+    white-space: normal;
+    text-align: left;
+    min-height: 2.75rem;
+  }
+}

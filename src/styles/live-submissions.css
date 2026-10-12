@@ -1,0 +1,229 @@
+.mis-portal .live-submissions {
+  display: grid;
+  gap: 1.25rem;
+  min-width: 0;
+}
+.mis-portal .live-submission-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.mis-portal .live-submission-heading > div {
+  min-width: 0;
+}
+.mis-portal .live-submission-heading > .mis-button {
+  flex-shrink: 0;
+}
+.mis-portal .live-submission-heading p {
+  color: var(--mis-muted);
+  margin-top: 0.4rem;
+  max-width: 72ch;
+}
+.mis-portal .live-submission-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.mis-portal .live-submission-filters > .mis-field {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+.mis-portal .live-submission-filters > .live-submission-search {
+  flex-basis: 18rem;
+}
+.mis-portal .live-submission-history-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  cursor: pointer;
+}
+.mis-portal .live-submission-history-toggle input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--mis-primary);
+}
+.mis-portal .live-submission-table {
+  padding: 0;
+}
+.mis-portal .live-submission-table table {
+  min-width: 43rem;
+}
+.mis-portal .live-submission-table td {
+  max-width: 25rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-submission-table .mis-button {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  flex-shrink: 0;
+  min-width: max-content;
+}
+.mis-portal .live-submission-table td > span:not(.mis-status) {
+  display: block;
+  color: var(--mis-muted);
+  margin-top: 0.3rem;
+  font-size: 0.8125rem;
+}
+.mis-portal .live-submission-table strong {
+  font-weight: 600;
+}
+.mis-portal .live-result-summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+}
+.mis-portal .live-result-summary > p {
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .live-result-summary > .mis-button {
+  margin-left: auto;
+}
+.mis-portal .live-submission-detail-anchor {
+  scroll-margin-top: 1rem;
+  min-width: 0;
+}
+.mis-portal .live-submission-detail-anchor:empty {
+  display: none;
+}
+.mis-portal .live-submission-detail-anchor:focus {
+  outline: none;
+}
+.mis-portal .live-submission-detail {
+  display: grid;
+  gap: 1.5rem;
+}
+.mis-portal .live-submission-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin: 0;
+}
+.mis-portal .live-submission-meta dt {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+}
+.mis-portal .live-submission-meta dd {
+  margin: 0.3rem 0 0;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-submission-prompt {
+  padding: 1rem 0;
+  border-block: 1px solid var(--mis-line);
+}
+.mis-portal .live-submission-prompt summary {
+  cursor: pointer;
+  color: var(--mis-primary);
+  font-weight: 500;
+}
+.mis-portal .live-submission-prompt summary:focus-visible {
+  outline: 3px solid var(--mis-primary);
+  outline-offset: 3px;
+}
+.mis-portal .live-submission-prompt[open] summary {
+  margin-bottom: 1rem;
+}
+.mis-portal .live-submission-prose {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-width: 75ch;
+  line-height: 1.8;
+}
+.mis-portal .live-submission-answer,
+.mis-portal .live-submission-feedback {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.mis-portal .live-submission-feedback,
+.mis-portal .live-review-form,
+.mis-portal .live-submission-history {
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--mis-line);
+}
+.mis-portal .live-submission-grade {
+  font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .live-submission-grade span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--mis-muted);
+}
+.mis-portal .live-review-form {
+  display: grid;
+  gap: 0.75rem;
+}
+.mis-portal .live-review-form fieldset {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.mis-portal .live-review-form fieldset > .mis-field {
+  width: 100%;
+}
+.mis-portal .live-review-form fieldset > .live-review-score {
+  max-width: 10rem;
+}
+.mis-portal .live-review-help {
+  color: var(--mis-muted);
+  max-width: 75ch;
+  font-size: 0.8125rem;
+}
+.mis-portal .live-review-error {
+  color: var(--mis-error, #991b1b);
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-review-success {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--mis-success, #166534);
+}
+.mis-portal .live-submission-history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.mis-portal .live-submission-history h3 {
+  width: 100%;
+  margin-bottom: 0.4rem;
+}
+.mis-portal .live-revision-current {
+  color: var(--mis-primary);
+  border-color: var(--mis-primary);
+  background: var(--mis-bg);
+}
+.mis-portal .live-submission-empty {
+  padding: 2rem;
+}
+.mis-portal .live-submission-empty p {
+  max-width: 70ch;
+  color: var(--mis-muted);
+  margin-top: 0.6rem;
+}
+@media (max-width: 700px) {
+  .mis-portal .live-submission-heading {
+    flex-wrap: wrap;
+  }
+  .mis-portal .live-submission-filters > .mis-field {
+    flex-basis: 100%;
+  }
+  .mis-portal .live-result-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .mis-portal .live-result-summary > .mis-button {
+    margin-left: 0;
+  }
+  .mis-portal .live-submission-empty {
+    padding: 1.25rem;
+  }
+}

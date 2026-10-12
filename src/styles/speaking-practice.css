@@ -1,0 +1,125 @@
+.speaking-practice {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.speaking-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--mis-ink);
+}
+.speaking-heading h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.speaking-step {
+  display: grid;
+  gap: 0.85rem;
+  padding-block: 1.25rem 0.25rem;
+  border-top: 1px solid var(--mis-line);
+}
+.speaking-step h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+.speaking-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem;
+}
+.speaking-controls .mis-field {
+  flex: 1 1 10rem;
+}
+.speaking-step > button {
+  justify-self: start;
+}
+.speaking-consent {
+  display: flex;
+  gap: 0.65rem;
+  align-items: start;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.speaking-consent input {
+  margin-top: 0.35rem;
+  accent-color: var(--mis-primary);
+  flex-shrink: 0;
+}
+.speaking-unavailable {
+  padding: 1rem;
+  background: var(--mis-soft);
+  color: var(--mis-ink);
+  border-radius: 0.5rem;
+  line-height: 1.65;
+}
+.speaking-question-audio {
+  max-width: 100%;
+}
+.speaking-question-audio audio {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+}
+.speaking-job-state {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  font-size: 0.875rem;
+}
+.speaking-result {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.speaking-result details {
+  min-width: 0;
+  border-block-start: 1px solid var(--mis-line);
+}
+.speaking-result summary {
+  padding-block: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.speaking-result summary:focus-visible {
+  outline: 2px solid var(--mis-primary);
+  outline-offset: 3px;
+}
+.speaking-transcript {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+  max-width: 70ch;
+}
+.speaking-criteria summary strong {
+  display: block;
+  color: var(--mis-primary);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.35rem;
+}
+.speaking-criterion-body {
+  padding-bottom: 1rem;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+.speaking-criterion-body h5 {
+  font-size: 0.875rem;
+  margin: 1rem 0 0.35rem;
+}
+.speaking-criterion-body ul {
+  padding-left: 1.25rem;
+}
+@media (max-width: 640px) {
+  .speaking-controls {
+    align-items: stretch;
+  }
+  .speaking-controls > * {
+    flex-basis: 100%;
+  }
+  .speaking-step > button {
+    width: 100%;
+  }
+}

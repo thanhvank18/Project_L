@@ -7,7 +7,7 @@ if ($taskPnpmCommand) {
   $taskRuntime = Join-Path $env:USERPROFILE '.cache/codex-runtimes/codex-primary-runtime/dependencies'
   $taskPnpmPath = Join-Path $taskRuntime 'bin/fallback/pnpm.cmd'
   if (!(Test-Path -LiteralPath $taskPnpmPath)) {
-    throw 'pnpm not found. Install Node.js 22.12+ and pnpm 11.25.0, then retry.'
+    throw 'pnpm not found. Install Node.js 24+ and pnpm 11.25.0, then retry.'
   }
   $env:PATH = (Join-Path $taskRuntime 'node/bin') + ';' + $env:PATH
 }

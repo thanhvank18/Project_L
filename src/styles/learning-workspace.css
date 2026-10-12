@@ -1,0 +1,633 @@
+.learning-portal .lw-workspace,
+.learning-portal .lw-notebook {
+  min-width: 0;
+}
+
+.learning-portal .lw-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.learning-portal .lw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.learning-portal .lw-header h1 {
+  margin: 0 0 10px;
+  font-size: 1.65rem;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.learning-portal .lw-header p,
+.learning-portal .lw-notebook .lp-section-heading p {
+  max-width: 70ch;
+  margin: 0;
+  color: var(--lp-muted);
+  line-height: 1.75;
+}
+
+.learning-portal .lw-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+  color: var(--lp-muted);
+  font-size: 0.8rem;
+}
+
+.learning-portal .lw-preview-note {
+  margin: 20px 0 28px;
+  padding: 12px 16px;
+  border: 1px solid var(--lp-line);
+  border-radius: 6px;
+  color: var(--lp-muted);
+  background: var(--lp-soft);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.learning-portal .lw-reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.learning-portal .lw-workspace h2,
+.learning-portal .lw-notebook h2 {
+  margin: 0 0 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.learning-portal .lw-workspace h3 {
+  margin: 0 0 12px;
+  font-size: 0.925rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.learning-portal .lw-passage {
+  padding: 28px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-line);
+  border-radius: 8px;
+}
+
+.learning-portal .lw-passage > div p {
+  max-width: 70ch;
+  margin: 22px 0 0;
+  color: var(--lp-ink);
+  line-height: 1.95;
+  font-size: 0.975rem;
+}
+
+.learning-portal .lw-hint {
+  margin: 0 0 16px;
+  color: var(--lp-muted);
+  font-size: 0.8rem;
+  line-height: 1.75;
+}
+
+.learning-portal .lw-reading-source > .lw-dictionary {
+  margin-top: 28px;
+}
+
+.learning-portal .lw-dictionary h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.learning-portal .lw-word-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.learning-portal .lw-word-option {
+  min-height: 38px;
+  padding: 7px 12px;
+  border: 1px solid var(--lp-line);
+  border-radius: 5px;
+  background: var(--lp-surface);
+  color: var(--lp-ink);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.learning-portal .lw-word-option:hover,
+.learning-portal .lw-word-option[aria-pressed='true'] {
+  border-color: var(--lp-accent);
+  background: var(--lp-soft);
+  color: var(--lp-accent);
+}
+
+.learning-portal .lw-word-option:focus-visible,
+.learning-portal .lw-details summary:focus-visible {
+  outline: 2px solid var(--lp-accent);
+  outline-offset: 3px;
+}
+
+.learning-portal .lw-field-label {
+  display: block;
+  margin: 22px 0 8px;
+  color: var(--lp-ink);
+  font-size: 0.825rem;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.learning-portal .lw-workspace textarea {
+  width: 100%;
+  min-width: 0;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  caret-color: var(--lp-accent);
+}
+
+.learning-portal .lw-draft-controls {
+  margin-top: 22px;
+}
+
+.learning-portal .lw-action-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.learning-portal .lw-attempt-state {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.learning-portal .lw-save-status {
+  margin: 12px 0 0;
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.learning-portal .lw-error {
+  color: #a12d28;
+}
+
+.learning-portal .lw-confirm {
+  margin-top: 20px;
+  padding: 18px;
+  background: var(--lp-soft);
+  border: 1px solid var(--lp-line);
+  border-radius: 6px;
+}
+
+.learning-portal .lw-confirm p {
+  margin: 0 0 16px;
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.learning-portal .lw-writing-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.65fr) minmax(0, 0.9fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.learning-portal .lw-writing-prompt,
+.learning-portal .lw-writing-editor,
+.learning-portal .lw-dictionary {
+  min-width: 0;
+}
+
+.learning-portal .lw-writing-prompt {
+  padding-right: 20px;
+  border-right: 1px solid var(--lp-line);
+}
+
+.learning-portal .lw-prompt-text {
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.learning-portal .lw-writing-prompt h3 {
+  margin-top: 28px;
+}
+
+.learning-portal .lw-prompt-list {
+  margin: 0 0 24px;
+  padding-left: 20px;
+  color: var(--lp-muted);
+  font-size: 0.825rem;
+  line-height: 1.85;
+}
+
+.learning-portal .lw-prompt-list li + li {
+  margin-top: 10px;
+}
+
+.learning-portal .lw-editor-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.learning-portal .lw-word-count {
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.learning-portal textarea.lw-essay {
+  display: block;
+  min-height: 450px;
+  padding: 18px;
+  background: var(--lp-surface);
+}
+
+.learning-portal .lw-writing-editor > .lw-hint {
+  margin-top: 8px;
+}
+
+.learning-portal .lw-details {
+  padding-top: 16px;
+  border-top: 1px solid var(--lp-line);
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+.learning-portal .lw-details summary {
+  color: var(--lp-ink);
+  cursor: pointer;
+}
+
+.learning-portal .lw-details p {
+  color: var(--lp-muted);
+}
+
+.learning-portal .lw-lookup {
+  display: flex;
+  gap: 6px;
+}
+
+.learning-portal .lw-lookup input {
+  min-width: 0;
+  width: 100%;
+}
+
+.learning-portal .lw-lookup button {
+  flex-shrink: 0;
+  padding: 10px;
+}
+
+.learning-portal .lw-dictionary-result {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--lp-line);
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.learning-portal .lw-dictionary-result h4 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.learning-portal .lw-dictionary-result p {
+  margin: 0 0 12px;
+}
+
+.learning-portal .lw-example {
+  color: var(--lp-muted);
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.learning-portal .lw-word-saved {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--lp-accent);
+  font-size: 0.8rem;
+}
+
+.learning-portal .lw-pending {
+  max-width: 760px;
+  padding: 32px;
+  border: 1px solid var(--lp-line);
+  border-radius: 8px;
+  background: var(--lp-surface);
+}
+
+.learning-portal .lw-pending-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  color: var(--lp-muted);
+}
+
+.learning-portal .lw-pending > p {
+  max-width: 70ch;
+  color: var(--lp-muted);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.learning-portal .lw-pending > h3 {
+  margin-top: 28px;
+}
+
+.learning-portal .lw-practice-prompt {
+  margin: 28px 0;
+  padding: 22px 0;
+  border-block: 1px solid var(--lp-line);
+}
+
+.learning-portal .lw-practice-prompt p {
+  margin: 0;
+  line-height: 1.85;
+}
+
+.learning-portal .lw-notebook-count {
+  align-self: center;
+  color: var(--lp-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.learning-portal .lw-notebook-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.38fr);
+  align-items: start;
+  gap: 32px;
+  margin-top: 28px;
+}
+
+.learning-portal .lw-notebook-main {
+  min-width: 0;
+}
+
+.learning-portal .lw-notebook-toolbar .lw-field-label {
+  margin-top: 0;
+}
+
+.learning-portal .lw-search-field {
+  position: relative;
+}
+
+.learning-portal .lw-search-field > svg {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--lp-muted);
+  pointer-events: none;
+}
+
+.learning-portal .lw-search-field input {
+  width: 100%;
+  padding-left: 42px;
+}
+
+.learning-portal .lw-notebook-feedback {
+  min-height: 21px;
+  margin: 10px 0;
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.learning-portal .lw-notebook-feedback.lw-error {
+  color: #a12d28;
+}
+
+.learning-portal .lw-vocabulary-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--lp-line);
+}
+
+.learning-portal .lw-vocabulary-list > li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--lp-line);
+}
+
+.learning-portal .lw-vocabulary-content {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.learning-portal .lw-vocabulary-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.learning-portal .lw-vocabulary-title h2 {
+  margin: 0;
+}
+
+.learning-portal .lw-vocabulary-title > span {
+  font-size: 0.85rem;
+}
+
+.learning-portal .lw-vocabulary-content .lw-example {
+  margin: 10px 0;
+  font-size: 0.85rem;
+}
+
+.learning-portal .lw-word-topic,
+.learning-portal .lw-local-note {
+  color: var(--lp-muted);
+  font-size: 0.75rem;
+  line-height: 1.8;
+}
+
+.learning-portal .lw-word-topic {
+  margin: 0;
+}
+
+.learning-portal .lw-local-note {
+  margin: 20px 0 0;
+}
+
+.learning-portal .lw-remove-word {
+  flex-shrink: 0;
+}
+
+.learning-portal .lw-remove-word span {
+  display: none;
+}
+
+.learning-portal .lw-notebook-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 0;
+}
+
+.learning-portal .lw-notebook-empty > svg {
+  margin-bottom: 20px;
+  color: var(--lp-muted);
+}
+
+.learning-portal .lw-notebook-empty p {
+  max-width: 60ch;
+  margin: 0 0 20px;
+  font-size: 0.875rem;
+  line-height: 1.85;
+}
+
+.learning-portal .lw-notebook-practice {
+  padding: 24px;
+  background: var(--lp-soft);
+  border: 1px solid var(--lp-line);
+  border-radius: 8px;
+}
+
+.learning-portal .lw-notebook-practice > p {
+  margin: 18px 0 0;
+  color: var(--lp-muted);
+  font-size: 0.825rem;
+  line-height: 1.85;
+}
+
+@media (max-width: 1200px) {
+  .learning-portal .lw-writing-layout {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+  }
+
+  .learning-portal .lw-writing-layout > .lw-dictionary {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--lp-line);
+    padding-top: 24px;
+  }
+
+  .learning-portal .lw-writing-layout .lw-lookup {
+    max-width: 420px;
+  }
+
+  .learning-portal .lw-notebook-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .learning-portal .lw-workspace textarea {
+    font-size: 1rem;
+  }
+
+  .learning-portal .lw-reading-layout,
+  .learning-portal .lw-writing-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .learning-portal .lw-header {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .learning-portal .lw-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .learning-portal .lw-meta {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .learning-portal .lw-writing-prompt {
+    padding: 0 0 24px;
+    border-right: 0;
+    border-bottom: 1px solid var(--lp-line);
+  }
+
+  .learning-portal .lw-passage,
+  .learning-portal .lw-pending {
+    padding: 22px;
+  }
+
+  .learning-portal .lw-notebook .lp-section-heading {
+    flex-wrap: wrap;
+  }
+
+  .learning-portal .lw-vocabulary-list > li {
+    gap: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learning-portal .lw-word-option {
+    transition: none;
+  }
+}
+.mis-portal .lw-text-workspace {
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+}
+.mis-portal .lw-audio-note {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.mis-portal .lw-audio-note svg {
+  flex-shrink: 0;
+}
+.mis-portal .lw-audio-note p {
+  margin: 0;
+}
+.mis-portal .lw-submission-summary {
+  padding: 20px 24px;
+}
+.mis-portal .lw-returned-feedback {
+  margin-block: 16px;
+  border-top: 1px solid var(--mis-line);
+  padding-top: 16px;
+}
+.mis-portal .lw-returned-feedback p,
+.mis-portal .lw-instructions {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .mis-portal .lw-text-workspace,
+  .mis-portal .lw-submission-summary {
+    padding: 18px;
+  }
+}

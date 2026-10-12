@@ -1,24 +1,33 @@
 {
   "name": "project-l",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.0.0"
   },
   "scripts": {
     "dev": "vite",
+    "server:dev": "node --watch --experimental-strip-types server/index.ts",
+    "server": "node --experimental-strip-types server/index.ts",
+    "server:ai": "node --env-file-if-exists=.local/portal/speaking.env --env-file-if-exists=.local/portal/gemini.env --experimental-strip-types server/index.ts",
+    "server:local": "node --env-file-if-exists=.local/portal/speaking.env --env-file-if-exists=.local/portal/google.env --env-file-if-exists=.local/portal/email.env --env-file-if-exists=.local/portal/gemini.env --experimental-strip-types server/index.ts",
+    "admin:bootstrap": "node --experimental-strip-types server/bootstrap.ts",
     "typecheck": "tsc -b",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint": "eslint . --max-warnings 0",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm build"
+    "test:portal": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:server": "node --experimental-strip-types --test server/*.test.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm build",
+    "release:package": "node scripts/package-release.mjs"
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "5.3.0",
     "@phosphor-icons/react": "2.1.10",
+    "google-auth-library": "11.2.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },

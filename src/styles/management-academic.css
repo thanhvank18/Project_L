@@ -1,0 +1,218 @@
+.mis-portal .ma-view {
+  display: grid;
+  gap: 1.25rem;
+}
+.mis-portal .ma-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.mis-portal .ma-heading h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+.mis-portal .ma-heading h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+.mis-portal .ma-heading p {
+  margin: 0.5rem 0 0;
+  color: var(--mis-muted);
+  max-width: 70ch;
+}
+.mis-portal .ma-search {
+  min-width: 14rem;
+  flex: 1 1 19rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.mis-portal .ma-search > svg {
+  position: absolute;
+  left: 0.8rem;
+  color: var(--mis-muted);
+  pointer-events: none;
+}
+.mis-portal .ma-search input {
+  width: 100%;
+  padding-left: 2.5rem;
+}
+.mis-portal .ma-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.mis-portal .ma-filter select {
+  max-width: 17rem;
+}
+.mis-portal .ma-count {
+  color: var(--mis-muted);
+  white-space: nowrap;
+  font-size: 0.8125rem;
+}
+.mis-portal .ma-cell-sub {
+  display: block;
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  margin-top: 0.3rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .ma-row-actions,
+.mis-portal .ma-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.mis-portal .ma-actions {
+  margin-top: 1.1rem;
+}
+.mis-portal .ma-editor,
+.mis-portal .ma-detail {
+  padding: 1.25rem;
+}
+.mis-portal .ma-editor > p,
+.mis-portal .ma-detail > p {
+  line-height: 1.7;
+}
+.mis-portal .ma-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+.mis-portal .ma-wide {
+  grid-column: 1 / -1;
+}
+.mis-portal .ma-help {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  margin: 0.8rem 0 0;
+  max-width: 75ch;
+}
+.mis-portal .ma-feedback {
+  margin: 0;
+  color: #166534;
+  font-size: 0.875rem;
+}
+.mis-portal .ma-error {
+  color: #b91c1c;
+}
+.mis-portal .ma-editor .ma-feedback {
+  margin-top: 1rem;
+}
+.mis-portal .ma-definition {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+  margin: 1.25rem 0;
+}
+.mis-portal .ma-definition dt {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  margin-bottom: 0.4rem;
+}
+.mis-portal .ma-definition dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.mis-portal .ma-unit-list {
+  padding: 0;
+  list-style: none;
+  margin: 1rem 0;
+}
+.mis-portal .ma-unit-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--mis-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.mis-portal .ma-panel-footer {
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--mis-line);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.mis-portal .ma-panel-footer .ma-help {
+  margin: 0;
+}
+.mis-portal .ma-inline-feedback {
+  white-space: normal;
+  min-width: 12rem;
+  max-width: 35ch;
+  line-height: 1.6;
+  font-size: 0.8125rem;
+}
+.mis-portal .ma-status-active,
+.mis-portal .ma-status-present {
+  color: #166534;
+  background: #f0fdf4;
+}
+.mis-portal .ma-status-draft,
+.mis-portal .ma-status-unmarked {
+  color: var(--edu-muted);
+  background: var(--edu-soft);
+}
+.mis-portal .ma-status-paused,
+.mis-portal .ma-status-late {
+  color: #92400e;
+  background: #fffbeb;
+}
+.mis-portal .ma-status-absent {
+  color: #991b1b;
+  background: #fef2f2;
+}
+.mis-portal .ma-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+@media (max-width: 640px) {
+  .mis-portal .ma-heading {
+    flex-direction: column;
+  }
+  .mis-portal .ma-heading h1 {
+    font-size: 1.375rem;
+  }
+  .mis-portal .ma-form-grid,
+  .mis-portal .ma-definition {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mis-portal .ma-search {
+    min-width: 0;
+    flex-basis: 100%;
+  }
+  .mis-portal .ma-filter {
+    flex: 1 1 100%;
+  }
+  .mis-portal .ma-filter select {
+    flex: 1;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .mis-portal .ma-filter input {
+    flex: 1;
+    min-width: 0;
+  }
+  .mis-portal .ma-editor,
+  .mis-portal .ma-detail {
+    padding: 1rem;
+  }
+  .mis-portal .ma-unit-list li {
+    align-items: flex-start;
+  }
+}

@@ -7,7 +7,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y'
 import prettier from 'eslint-config-prettier'
 
 export default tseslint.config(
-  { ignores: ['dist/**', 'coverage/**', 'node_modules/**'] },
+  { ignores: ['dist/**', 'coverage/**', 'node_modules/**', '.local/**'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
@@ -25,7 +25,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ['*.{js,ts}'],
+    files: ['*.{js,ts}', 'server/**/*.ts', 'tests/**/*.ts'],
     languageOptions: { globals: globals.node },
   },
   prettier,

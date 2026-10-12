@@ -5,6 +5,8 @@ build/
 .next/
 out/
 coverage/
+output/
+.vercel/
 *.tsbuildinfo
 
 # Local environment files; retain safe examples
@@ -17,6 +19,11 @@ coverage/
 .impeccable/live/
 .impeccable/review/
 .serena/
+.local/
 *.log
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.key
 .DS_Store
 Thumbs.db

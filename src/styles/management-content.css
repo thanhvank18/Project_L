@@ -1,0 +1,428 @@
+.mis-portal .mc-content {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+.mis-portal .mc-content h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.mis-portal .mc-context {
+  margin: 0;
+  color: var(--mis-muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  max-width: 78ch;
+}
+.mis-portal .mc-search {
+  flex: 1 1 230px;
+}
+.mis-portal .mc-search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.mis-portal .mc-search-input > svg {
+  position: absolute;
+  left: 12px;
+  color: var(--mis-muted);
+  pointer-events: none;
+}
+.mis-portal .mc-search-input input {
+  width: 100%;
+  padding-left: 38px;
+}
+.mis-portal .mc-filter {
+  flex: 0 1 220px;
+  min-width: 150px;
+}
+.mis-portal .mc-toolbar-action {
+  align-self: end;
+  flex-shrink: 0;
+}
+.mis-portal .mc-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mis-portal .mc-compact {
+  font-size: 0.8125rem;
+  min-height: 34px;
+  padding: 6px 11px;
+  white-space: nowrap;
+}
+.mis-portal .mc-feedback {
+  margin: 0;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-radius: 6px;
+  line-height: 1.65;
+  font-size: 0.875rem;
+}
+.mis-portal .mc-success {
+  color: #166534;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+.mis-portal .mc-error {
+  color: #991b1b;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+.mis-portal .mc-published {
+  color: #166534;
+  background: #f0fdf4;
+}
+.mis-portal .mc-draft {
+  color: var(--edu-muted);
+  background: var(--edu-soft);
+}
+.mis-portal .mc-form {
+  padding: 24px;
+  display: grid;
+  gap: 20px;
+}
+.mis-portal .mc-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.mis-portal .mc-form .mis-field {
+  min-width: 0;
+}
+.mis-portal .mc-form textarea {
+  width: 100%;
+  resize: vertical;
+  line-height: 1.7;
+}
+.mis-portal .mc-check {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  min-height: 36px;
+  cursor: pointer;
+}
+.mis-portal .mc-check input {
+  accent-color: var(--mis-primary);
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin: 0;
+}
+.mis-portal .mc-check:has(input:disabled) {
+  cursor: default;
+}
+.mis-portal .mc-syllabus {
+  padding: 24px;
+}
+.mis-portal .mc-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+.mis-portal .mc-panel-heading p {
+  margin: 5px 0 0;
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.mis-portal .mc-progress {
+  width: 100%;
+  height: 7px;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #e2e8f0;
+  accent-color: var(--mis-primary);
+}
+.mis-portal .mc-progress::-webkit-progress-bar {
+  background: #e2e8f0;
+}
+.mis-portal .mc-progress::-webkit-progress-value {
+  background: var(--mis-primary);
+  border-radius: 5px;
+}
+.mis-portal .mc-progress::-moz-progress-bar {
+  background: var(--mis-primary);
+}
+.mis-portal .mc-unit-list {
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+.mis-portal .mc-unit-list li {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .mc-unit-list li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.mis-portal .mc-small {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  flex-shrink: 0;
+}
+.mis-portal .mc-article {
+  padding: 24px;
+}
+.mis-portal .mc-article > p {
+  max-width: 75ch;
+  margin: 12px 0 0;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 0.9375rem;
+}
+.mis-portal .mc-table-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 190px;
+  font-weight: 500;
+  max-width: 380px;
+}
+.mis-portal .mc-table-title svg {
+  flex-shrink: 0;
+  color: var(--mis-primary);
+}
+.mis-portal .mc-title-cell {
+  font-weight: 500;
+  min-width: 200px;
+  max-width: 360px;
+}
+.mis-portal .mc-capitalize {
+  text-transform: capitalize;
+}
+.mis-portal .mc-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .mc-submission-count {
+  display: block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .mc-assignment-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--mis-line);
+  font-size: 0.875rem;
+}
+.mis-portal .mc-assignment-summary span {
+  color: var(--mis-muted);
+}
+.mis-portal .mc-student-tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mis-portal .mc-student-tasks > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .mc-student-tasks > li:last-child {
+  border-bottom: 0;
+}
+.mis-portal .mc-task-main {
+  min-width: 0;
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+}
+.mis-portal .mc-task-main h2 {
+  font-size: 1rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .mc-task-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+}
+.mis-portal .mc-task-meta {
+  color: var(--mis-muted);
+  font-size: 0.8125rem;
+  line-height: 1.75;
+}
+.mis-portal .mc-task-meta time {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.mis-portal .mc-task-status {
+  white-space: normal;
+}
+.mis-portal .mc-task-missing {
+  color: var(--edu-muted);
+  background: var(--edu-soft);
+}
+.mis-portal .mc-task-draft {
+  color: #92400e;
+  background: #fffbeb;
+}
+.mis-portal .mc-task-submitted {
+  color: var(--edu-primary-hover);
+  background: var(--edu-soft);
+}
+.mis-portal .mc-task-returned {
+  color: #166534;
+  background: #f0fdf4;
+}
+.mis-portal .mc-task-result {
+  font-size: 0.8125rem;
+  color: var(--mis-muted);
+}
+.mis-portal .mc-task-result strong {
+  color: var(--mis-ink);
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .mc-student-tasks > li > button {
+  flex-shrink: 0;
+}
+.mis-portal .mc-notification-toolbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.mis-portal .mc-notification-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mis-portal .mc-notification-list > li {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+  padding: 24px;
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .mc-notification-list > li:last-child {
+  border-bottom: 0;
+}
+.mis-portal .mc-notification-list > li > svg {
+  color: var(--mis-muted);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.mis-portal .mc-notification-list > .mc-unread {
+  background: #f8faff;
+}
+.mis-portal .mc-notification-list > .mc-unread > svg {
+  color: var(--mis-primary);
+}
+.mis-portal .mc-notification-body {
+  flex: 1;
+  min-width: 0;
+}
+.mis-portal .mc-notification-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mis-portal .mc-notification-body h2 {
+  font-size: 0.9375rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .mc-notification-body p {
+  margin: 8px 0 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.75;
+  font-size: 0.875rem;
+  max-width: 75ch;
+}
+.mis-portal .mc-notification-body time {
+  color: var(--mis-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 700px) {
+  .mis-portal .mc-student-tasks > li {
+    display: grid;
+    padding: 18px;
+    gap: 16px;
+  }
+  .mis-portal .mc-student-tasks > li > button {
+    width: 100%;
+    justify-content: center;
+  }
+  .mis-portal .mc-assignment-summary {
+    padding: 16px 18px;
+  }
+  .mis-portal .mc-compact,
+  .mis-portal .mc-check {
+    min-height: 44px;
+  }
+  .mis-portal .mc-content {
+    gap: 16px;
+  }
+  .mis-portal .mc-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .mis-portal .mc-form,
+  .mis-portal .mc-syllabus,
+  .mis-portal .mc-article {
+    padding: 18px;
+  }
+  .mis-portal .mc-form {
+    gap: 16px;
+  }
+  .mis-portal .mc-search,
+  .mis-portal .mc-filter {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+  .mis-portal .mc-toolbar-action {
+    width: 100%;
+    justify-content: center;
+  }
+  .mis-portal .mc-panel-heading {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .mis-portal .mc-unit-list li {
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
+  .mis-portal .mc-unit-list .mc-small {
+    padding-left: 27px;
+  }
+  .mis-portal .mc-notification-list > li {
+    padding: 18px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .mis-portal .mc-notification-body {
+    flex-basis: calc(100% - 36px);
+  }
+  .mis-portal .mc-notification-list > li > button {
+    margin-left: 31px;
+  }
+  .mis-portal .mc-notification-toolbar > .mc-actions {
+    width: 100%;
+  }
+}

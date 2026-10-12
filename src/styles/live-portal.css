@@ -1,0 +1,190 @@
+.mis-portal .live-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  border: 1px solid var(--mis-line);
+  border-radius: 8px;
+  background: var(--mis-surface);
+}
+.mis-portal .live-summary > div {
+  padding: 20px 24px;
+  min-width: 0;
+}
+.mis-portal .live-summary > div + div {
+  border-left: 1px solid var(--mis-line);
+}
+.mis-portal .live-summary dt {
+  color: var(--mis-muted);
+  font-size: 13px;
+}
+.mis-portal .live-summary dt a {
+  color: inherit;
+}
+.mis-portal .live-summary dt a:hover {
+  color: var(--mis-primary);
+  text-decoration: underline;
+}
+.mis-portal .live-summary dd {
+  margin: 5px 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.mis-portal .live-welcome {
+  display: grid;
+  gap: 16px;
+  background: var(--edu-soft);
+}
+.mis-portal .live-welcome p {
+  max-width: 72ch;
+  color: var(--mis-muted);
+}
+.mis-portal .live-overview-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.mis-portal .live-overview-columns > section {
+  align-content: start;
+}
+.mis-portal .live-rows {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mis-portal .live-rows li {
+  display: grid;
+  gap: 4px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--mis-line);
+}
+.mis-portal .live-rows li a {
+  font-weight: 500;
+  color: var(--mis-primary);
+}
+.mis-portal .live-rows li a:hover {
+  text-decoration: underline;
+}
+.mis-portal .live-heading > a {
+  color: var(--mis-primary);
+  font-size: 13px;
+  font-weight: 500;
+  flex-shrink: 0;
+  padding-block: 4px;
+}
+.mis-portal .live-rows li:last-child {
+  border-bottom: 0;
+}
+.mis-portal .live-rows :is(span, time) {
+  color: var(--mis-muted);
+  font-size: 13px;
+}
+.mis-portal .live-unread {
+  margin-left: auto;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  min-width: 22px;
+  text-align: center;
+  padding-inline: 5px;
+  border-radius: 5px;
+  background: var(--edu-soft);
+  color: var(--mis-primary);
+}
+.mis-portal .live-instructions {
+  display: grid;
+  gap: 16px;
+}
+.mis-portal .live-prose {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+  max-width: 75ch;
+}
+.mis-portal .live-attachments {
+  min-width: 0;
+}
+.mis-portal .live-attachments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  display: grid;
+  gap: 12px;
+}
+.mis-portal .live-attachment {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--mis-line);
+  padding: 12px;
+  border-radius: 6px;
+}
+.mis-portal .live-attachment > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 160px;
+  overflow-wrap: anywhere;
+}
+.mis-portal .live-attachment small {
+  display: block;
+  color: var(--mis-muted);
+}
+.mis-portal .live-attachment svg {
+  flex-shrink: 0;
+}
+.mis-portal audio {
+  width: 100%;
+  max-width: 480px;
+}
+.mis-portal .live-recorder {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid var(--mis-line);
+  padding-top: 20px;
+}
+.mis-portal .live-sync-error {
+  margin-bottom: 20px;
+}
+.mis-portal .live-workspace {
+  max-width: 1100px;
+}
+.mis-portal .live-success {
+  color: #166534;
+}
+@media (max-width: 1050px) {
+  .mis-portal .live-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mis-portal .live-summary > div:nth-child(odd) {
+    border-left: 0;
+  }
+  .mis-portal .live-summary > div:nth-child(n + 3) {
+    border-top: 1px solid var(--mis-line);
+  }
+  .mis-portal .live-overview-columns {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .mis-portal .live-summary > div {
+    padding: 16px;
+  }
+  .mis-portal .mis-page-heading {
+    flex-wrap: wrap;
+  }
+  .mis-portal .live-attachment > div:first-child {
+    min-width: 100%;
+  }
+}
+.mis-portal .live-review-entry {
+  display: grid;
+  gap: 1.25rem;
+}
+.mis-portal .live-review-entry p {
+  margin-top: 0.5rem;
+  max-width: 76ch;
+  color: var(--mis-muted);
+  line-height: 1.75;
+}

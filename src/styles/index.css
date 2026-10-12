@@ -1,4 +1,14 @@
 @import 'tailwindcss';
+@import './education-tokens.css';
+
+.route-loading {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #334155;
+  background: #fff;
+}
 @import '@fontsource/be-vietnam-pro/400.css';
 @import '@fontsource/be-vietnam-pro/500.css';
 @import '@fontsource/be-vietnam-pro/600.css';
@@ -99,6 +109,8 @@ button {
   font-weight: 400;
 }
 .navigation {
+  order: 2;
+  margin-left: auto;
   display: flex;
   gap: 36px;
   align-items: center;
@@ -119,6 +131,33 @@ button {
 }
 .menu-toggle {
   display: none;
+}
+.language-switch {
+  display: flex;
+  order: 3;
+  margin-left: 24px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  flex-shrink: 0;
+}
+.language-switch button {
+  min-width: 40px;
+  min-height: 38px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.language-switch button:hover {
+  background: #e8edff;
+  color: var(--accent);
+}
+.language-switch button[aria-pressed='true'] {
+  color: white;
+  background: var(--accent);
 }
 .hero {
   padding-top: 85px;
@@ -553,6 +592,8 @@ h2 {
     border-radius: 8px;
   }
   .menu-toggle {
+    order: 4;
+    margin-left: 10px;
     display: grid;
     place-items: center;
     width: 44px;
@@ -573,6 +614,13 @@ h2 {
     border: 1px solid var(--line);
     border-radius: 8px;
     box-shadow: 0 12px 28px #20232615;
+  }
+  .language-switch {
+    margin-left: auto;
+  }
+  .language-switch button {
+    min-width: 32px;
+    min-height: 36px;
   }
   .navigation.is-open {
     display: flex;

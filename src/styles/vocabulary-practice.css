@@ -1,0 +1,67 @@
+.mis-portal .vocab-practice {
+  max-width: 66rem;
+}
+.mis-portal .vocab-practice .live-heading > div {
+  display: grid;
+  gap: 0.5rem;
+}
+.mis-portal .vocab-practice .live-heading p {
+  max-width: 72ch;
+  line-height: 1.75;
+}
+.mis-portal .vocab-practice h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+.mis-portal .vocab-practice h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.mis-portal .vocab-practice h4 {
+  font-weight: 600;
+}
+.mis-portal .vocab-question {
+  display: grid;
+  gap: 0.75rem;
+  padding-block: 1.25rem;
+}
+.mis-portal .vocab-question h3 {
+  font-size: 1.75rem;
+  white-space: pre-wrap;
+}
+.mis-portal .vocab-answer {
+  border-top: 1px solid var(--mis-line);
+  padding-top: 1.5rem;
+}
+.mis-portal .vocab-ratings {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+.mis-portal .vocab-ratings .mis-button {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  white-space: normal;
+}
+.mis-portal .vocab-ratings small {
+  color: var(--mis-muted);
+  font-weight: 400;
+}
+.mis-portal .vocab-practice .live-success {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  overflow-wrap: anywhere;
+}
+.mis-portal .vocab-practice .live-success svg {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+@media (max-width: 600px) {
+  .mis-portal .vocab-ratings {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

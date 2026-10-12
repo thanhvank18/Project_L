@@ -1,0 +1,14 @@
+.git
+.local
+.vercel
+.impeccable
+.serena
+node_modules
+dist
+output
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite*
+*.key
